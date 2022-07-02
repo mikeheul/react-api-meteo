@@ -25,9 +25,7 @@ const Meteo = () => {
     }, [])
 
     let locale = `${currentLocation.country_code}`.toLowerCase();
-    console.log(locale)
     moment.locale(locale)
-    console.log(moment());
     
     return (
         <div className='card'>
@@ -41,6 +39,9 @@ const Meteo = () => {
             </div>
             <div className="secondary-content">
                 <p>
+                    {/* <i className="fa-solid fa-wind"></i>&nbsp;&nbsp;{meteoData.current.wind_speed} km/h<br />
+                    <i className="fa-solid fa-droplet"></i>&nbsp;&nbsp;{meteoData.current.precip} mm<br />
+                    <i className="fa-solid fa-gauge"></i>&nbsp;&nbsp;{meteoData.current.humidity} &#x25;<br /> */}
                     <i className="fa-solid fa-wind"></i>&nbsp;&nbsp;24 km/h<br />
                     <i className="fa-solid fa-droplet"></i>&nbsp;&nbsp;10 mm<br />
                     <i className="fa-solid fa-gauge"></i>&nbsp;&nbsp;10 &#x25;<br />
