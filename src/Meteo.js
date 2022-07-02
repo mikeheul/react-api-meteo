@@ -19,7 +19,7 @@ const Meteo = () => {
     
     useEffect(() => {
         axios
-            .get(`http://api.weatherstack.com/current?access_key=&query=${API_KEY}`)
+            .get(`http://api.weatherstack.com/current?access_key=${API_KEY}&query=${currentLocation.city}`)
             .then((res) => setMeteoData(res.data))
             // .then((res) => console.log(res.data))
     }, [])
