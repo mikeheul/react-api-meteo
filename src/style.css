@@ -40,6 +40,10 @@
     font-weight: 300;
 }
 
+.card .main-content .coords {
+    color: rgb(218, 18, 81);
+}
+
 .card .main-content h1 {
     font-weight: 800;
 }

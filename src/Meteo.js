@@ -31,15 +31,16 @@ const Meteo = () => {
             <div className="main-content">
                 <span className="date">{ moment().format("dddd Do MMMM YYYY") }</span>
                 <h1><i className="fa-solid fa-location-dot"></i> {currentLocation.city}</h1>
+                <span className="coords">{currentLocation.latitude} &bull; {currentLocation.longitude}</span><br />
                 <span className="region">{currentLocation.country_name + ', ' + currentLocation.state}</span><br />
                 {/* <span className="temperature">{meteoData.current.temperature}°C</span> */}
-                <span className="temperature">25°C</span>
+                <span className="temperature">25&#xb0;C</span>
             </div>
             <div className="secondary-content">
                 <p>
                     <i className="fa-solid fa-wind"></i>&nbsp;&nbsp;24 km/h<br />
                     <i className="fa-solid fa-droplet"></i>&nbsp;&nbsp;10 mm<br />
-                    <i className="fa-solid fa-gauge"></i>&nbsp;&nbsp;10 % <br />
+                    <i className="fa-solid fa-gauge"></i>&nbsp;&nbsp;10 &#x25;<br />
                 </p>
                 <img src="../sunny.png" alt="" />
             </div>
