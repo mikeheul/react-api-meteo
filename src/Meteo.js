@@ -29,6 +29,7 @@ const Meteo = () => {
     
     return (
         <div className='card'>
+            <div className="marge"></div>
             <div className="main-content">
                 <span className="date">{ moment().format("dddd Do MMMM YYYY") }</span>
                 <h1><i className="fa-solid fa-location-dot"></i> {currentLocation.city}</h1>
