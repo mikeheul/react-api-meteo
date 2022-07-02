@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import moment from 'moment';
-import 'moment/locale/fr';
+import 'moment/min/locales.min';
 
 const Meteo = () => {
     
@@ -11,12 +11,12 @@ const Meteo = () => {
     useEffect(() => {
         axios
             .get('https://geolocation-db.com/json/')
+            // .get('https://geolocation-db.com/json/92.69.249.247')
             .then((res) => setCurrentLocation(res.data))
-            // .then((res) => console.log(res.data);
     }, [])
 
     const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
-    
+
     useEffect(() => {
         axios
             .get(`http://api.weatherstack.com/current?access_key=${API_KEY}&query=${currentLocation.city}`)
@@ -24,7 +24,10 @@ const Meteo = () => {
             // .then((res) => console.log(res.data))
     }, [])
 
-    moment.locale('fr') 
+    let locale = `${currentLocation.country_code}`.toLowerCase();
+    console.log(locale)
+    moment.locale(locale)
+    console.log(moment());
     
     return (
         <div className='card'>

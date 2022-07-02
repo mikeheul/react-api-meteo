@@ -20,15 +20,15 @@
 .wrapper .card {
     /* height: 600px; */
     width: 600px; 
-    background: rgba( 255, 255, 255, 0.25 );
+    background: rgba( 255, 255, 255, 0.25);
     backdrop-filter: blur( 10px );
-    border-radius: 40px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 30px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
     padding: 60px;
     display: flex;
     gap: 50px;
     box-shadow: rgba(0, 0, 0, 0.162) 0px 25px 20px -20px;
-    transform-style: preserve-3d
+    transform-style: preserve-3d;
 }
 
 .card .main-content, .card .secondary-content {
@@ -57,6 +57,7 @@
 .card .main-content .temperature {
     font-size: 80px;
     font-weight: 200;
+    color: rgba(0, 0, 0, 0.753);
 }
 
 .card .secondary-content {
@@ -74,5 +75,19 @@
 }
 
 i {
-    color: rgba(255, 255, 255, 0.705);
+    color: rgba(0, 0, 0, 0.454);
+}
+
+@media(max-width:640px) {
+    .wrapper {
+        padding: 20px;
+    }
+    .card {
+        flex-direction: column;
+        width: 100%;
+    }
+    .card .secondary-content {
+        justify-content: start;
+        align-items: start;
+    }
 }
