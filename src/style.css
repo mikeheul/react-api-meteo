@@ -70,8 +70,21 @@
     align-items: center;
 }
 .card .secondary-content img {
-    margin-top: 20px;
+    margin-top: 50px;
     width: 100px;
+    /* animation: pulse 1.5s ease infinite; */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale3d(1.4, 1.4, 1.4);
+    }
+    50% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    100% {
+        transform: scale3d(1.2, 1.2, 1.2);
+    }
 }
 
 i {
