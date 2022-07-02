@@ -37,9 +37,9 @@ const Meteo = () => {
             </div>
             <div className="secondary-content">
                 <p>
-                    <i className="fa-solid fa-wind"></i> 24 km/h<br />
-                    <i className="fa-solid fa-droplet"></i> 10 mm<br />
-                    <i className="fa-solid fa-gauge"></i> 10 % <br />
+                    <i className="fa-solid fa-wind"></i>&nbsp;&nbsp;24 km/h<br />
+                    <i className="fa-solid fa-droplet"></i>&nbsp;&nbsp;10 mm<br />
+                    <i className="fa-solid fa-gauge"></i>&nbsp;&nbsp;10 % <br />
                 </p>
                 <img src="../sunny.png" alt="" />
             </div>

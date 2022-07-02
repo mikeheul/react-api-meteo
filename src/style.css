@@ -37,6 +37,17 @@
 
 .card .main-content .date {
     font-size: 25px;
+    font-weight: 300;
+}
+
+.card .main-content h1 {
+    font-weight: 800;
+}
+
+.card .main-content .region {
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
 }
 
 .card .main-content .temperature {
@@ -47,9 +58,17 @@
 .card .secondary-content {
     font-size: 18px;
     font-weight: 300;
-    color: rgb(52, 52, 52);
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .card .secondary-content img {
     margin-top: 20px;
     width: 100px;
+}
+
+i {
+    color: rgba(255, 255, 255, 0.705);
 }
