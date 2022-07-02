@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+.wrapper {
+    min-height: 100vh;
+    background: url('../public/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .card {
+    /* height: 600px; */
+    width: 600px; 
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 10px );
+    border-radius: 40px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 60px;
+    display: flex;
+    gap: 50px;
+    box-shadow: rgba(0, 0, 0, 0.162) 0px 25px 20px -20px;
+    transform-style: preserve-3d
+}
+
+.card .main-content, .card .secondary-content {
+    transform: translateZ(20px)
+}
+
+.card .main-content .date {
+    font-size: 25px;
+}
+
+.card .main-content .temperature {
+    font-size: 80px;
+    font-weight: 200;
+}
+
+.card .secondary-content {
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(52, 52, 52);
+}
+.card .secondary-content img {
+    margin-top: 20px;
+    width: 100px;
+}
