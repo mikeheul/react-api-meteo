@@ -10,8 +10,8 @@ const Meteo = () => {
 
     useEffect(() => {
         axios
-            // .get('https://geolocation-db.com/json/')
-            .get('https://geolocation-db.com/json/139.162.99.85')
+            .get('https://geolocation-db.com/json/')
+            // .get('https://geolocation-db.com/json/139.162.99.85')
             .then((res) => setCurrentLocation(res.data))
     }, [])
 
